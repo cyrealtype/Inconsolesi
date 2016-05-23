@@ -1,0 +1,93 @@
+@class1=[acute breve caron cedilla circumflex dieresis dotaccent grave hungarumlaut macron ring acute.cap breve.cap caron.cap circumflex.cap dieresis.cap dotaccent.cap grave.cap hungarumlaut.cap macron.cap ring.cap tilde.cap commaaccentcomb uni02BC uni02C9 uni02CB];
+@class2=[A C D E G H I J L N O R S T U W Y Z a ae c e g h dotlessi k l n o r s t u w y z];
+@cpsp1=[A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Aringacute Atilde AE AEacute B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Eth Dcaron Dcroat E Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcircumflex Gdotaccent H Hbar Hcircumflex I IJ Iacute Ibreve Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jcircumflex K L Lacute Lcaron Ldot Lslash M N Nacute Ncaron Eng Ntilde O Oacute Obreve Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Oslashacute Otilde OE P Thorn Q R Racute Rcaron S Sacute Scaron Scedilla Scircumflex T Tbar Tcaron U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent uni0122 uni0136 uni013B uni0145 uni0156 uni0162 Delta Omega];
+@ordn1=[zero one two three four five six seven eight nine];
+languagesystem DFLT dflt;
+languagesystem grek dflt;
+languagesystem latn dflt;
+languagesystem latn CAT ;
+
+
+feature aalt{
+  feature sups;
+  feature ordn;
+} aalt;
+
+feature cpsp { # Capital Spacing
+ # DEFAULT
+    pos @cpsp1 <5 0 10 0>;
+ script grek; # Greek
+    pos @cpsp1 <5 0 10 0>;
+ script latn; # Latin
+    pos @cpsp1 <5 0 10 0>;
+ language CAT ; # Catalan
+} cpsp;
+
+feature locl { # Localized Forms
+ script latn; # Latin
+ language CAT  exclude_dflt; # Catalan
+    sub l' periodcentered' l by ldot;
+    sub L' periodcentered' L by Ldot;
+} locl;
+
+feature sups { # Superscript
+ # DEFAULT
+    sub [one two three] by [onesuperior twosuperior threesuperior];
+ script grek; # Greek
+    sub [one two three] by [onesuperior twosuperior threesuperior];
+ script latn; # Latin
+    sub [one two three] by [onesuperior twosuperior threesuperior];
+ language CAT ; # Catalan
+} sups;
+
+feature frac { # Fractions
+ # DEFAULT
+    sub one slash two by onehalf;
+    sub one slash four by onequarter;
+    sub three slash four by threequarters;
+    sub three slash eight by threeeighths;
+    sub five slash eight by fiveeighths;
+    sub seven slash eight by seveneighths;
+ script grek; # Greek
+    sub one slash two by onehalf;
+    sub one slash four by onequarter;
+    sub three slash four by threequarters;
+    sub three slash eight by threeeighths;
+    sub five slash eight by fiveeighths;
+    sub seven slash eight by seveneighths;
+ script latn; # Latin
+    sub one slash two by onehalf;
+    sub one slash four by onequarter;
+    sub three slash four by threequarters;
+    sub three slash eight by threeeighths;
+    sub five slash eight by fiveeighths;
+    sub seven slash eight by seveneighths;
+ language CAT ; # Catalan
+} frac;
+
+feature ordn { # Ordinals
+ # DEFAULT
+    sub @ordn1 [A a]' by [ordfeminine ordfeminine];
+    sub @ordn1 [O o]' by [ordmasculine ordmasculine];
+ script grek; # Greek
+    sub @ordn1 [A a]' by [ordfeminine ordfeminine];
+    sub @ordn1 [O o]' by [ordmasculine ordmasculine];
+ script latn; # Latin
+    sub @ordn1 [A a]' by [ordfeminine ordfeminine];
+    sub @ordn1 [O o]' by [ordmasculine ordmasculine];
+ language CAT ; # Catalan
+} ordn;
+
+feature dlig { # Discretionary Ligatures
+ # DEFAULT
+    sub f i by uniFB01;
+    sub f l by uniFB02;
+ script grek; # Greek
+    sub f i by uniFB01;
+    sub f l by uniFB02;
+ script latn; # Latin
+    sub f i by uniFB01;
+    sub f l by uniFB02;
+ language CAT ; # Catalan
+} dlig;
+

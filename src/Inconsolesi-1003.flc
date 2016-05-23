@@ -1,0 +1,17 @@
+%%FONTLAB CLASSES
+
+%%CLASS class1
+%%GLYPHS  acute breve caron cedilla circumflex dieresis dotaccent grave hungarumlaut macron ring acute.cap breve.cap caron.cap circumflex.cap dieresis.cap dotaccent.cap grave.cap hungarumlaut.cap macron.cap ring.cap tilde.cap commaaccentcomb uni02BC uni02C9 uni02CB
+%%END
+
+%%CLASS class2
+%%GLYPHS  A C D E G H I J L N O R S T U W Y Z a ae c e g h dotlessi k l n o r s t u w y z
+%%END
+
+%%CLASS cpsp1
+%%GLYPHS  A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Aringacute Atilde AE AEacute B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Eth Dcaron Dcroat E Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcircumflex Gdotaccent H Hbar Hcircumflex I IJ Iacute Ibreve Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jcircumflex K L Lacute Lcaron Ldot Lslash M N Nacute Ncaron Eng Ntilde O Oacute Obreve Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Oslashacute Otilde OE P Thorn Q R Racute Rcaron S Sacute Scaron Scedilla Scircumflex T Tbar Tcaron U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent uni0122 uni0136 uni013B uni0145 uni0156 uni0162 Delta Omega
+%%END
+
+%%CLASS ordn1
+%%GLYPHS  zero one two three four five six seven eight nine
+%%END

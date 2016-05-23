@@ -1,0 +1,58 @@
+FONTLOG for the Inconsolesi fonts
+
+This file provides detailed information on the Inconsolesi
+Font Software.
+
+This information should be distributed along with the 
+Inconsolesi fonts and any derivative works.
+
+Basic Font Information
+
+Alexei Vanyashin, the primary designer of the family, wrote:
+
+Inconsolesi is a monospaced design based on 
+Inconsolata by Raph Levien(firstname.lastname@gmail.com) with 
+full WLG-4 support.
+
+Inconsolesi is a Unicode typeface family that supports 
+languages that use the Latin script and its variants, 
+and could be expanded to support other scripts.
+
+More specifically, this release supports the following 
+Unicode ranges: WGL-4
+
+ChangeLog
+
+22 February 2013 (Alexei Vanyashin) Inconsolesi 1.003
+— Fixed opentype features compilation error in the VBF source files\
+— Added features and classes files in the src folder
+
+18 January 2013 (Alexei Vanyashin) Inconsolesi 1.002
+— Adjusted design — took away hook serifs
+— Made all the fonts slightly bolder using MM interpolation
+— added bottom bar to /one/ and /onesuperior/
+
+03 September 2012 (Alexei Vanyashin) Inconsolesi v. 1.001
+— Completed initial design based on Inconsolata by Raph Levien (firstname.lastname@gmail.com)
+
+
+Source files
+
+There are four FontLab merged and optimized files for each weight:
+
+Inconsesi-Bold-OTF.vfb
+Inconsesi-BoldItalic-OTF.vfb
+Inconsesi-Regular-OTF.vfb
+Inconsesi-RegularItalic-OTF.vfb
+Inconsolesi-1003.fea (Opentype features file)
+Inconsolesi-1003.flc (Classes file)
+
+If you make modifications be sure to add your name (N), 
+email (E), web-address (if you have one) (W) and description (D). 
+This list is in alphabetical order.
+
+N: Alexei Vanyashin
+W: http://cyreal.org
+E: contact at cyreal.org
+D: Designer of Inconsolesi Family
+
